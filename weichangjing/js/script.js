@@ -18,3 +18,22 @@ var swiper = new Swiper('.swiper-container', {
         }
     }
 });
+
+
+var mp3=document.querySelector("#mp3");
+var mp3btn=document.querySelector("#mp3btn");
+
+
+//暂停音乐按钮
+// mp3btn.style.animationPlayState="paused";
+// // 旋转音乐按钮
+// mp3btn.style.animationPlayState="running";
+mp3btn.onclick=function(){
+    if(mp3.paused){
+        mp3btn.style.animationPlayState="running";
+        mp3.play();
+    }else{
+        mp3btn.style.animationPlayState="paused";
+        mp3.pause();
+    }
+}
