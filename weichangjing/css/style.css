@@ -1,5 +1,308 @@
 *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+
+/*
+  * 自动意样式  开始
+*/
+
+.swiper-button-next{
+    left:50%;
+    right:auto;
+    top:auto;
+    bottom:5%;
+    margin-left: -13.5px;
+    transform:rotateZ(90deg);
+}
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7{
+    background-image: url(../img/bj.png);
+    position: relative;
+    height: 100%;
+    color:#00e6b6;
+}
+
+
+/*----------头部-----------*/
+
+h2{
+    font-size:24px;
+    position:relative;
+    top: 10%;
+}
+h2::before,
+h2::after{
+    content: '';
+    width: 80px;
+    height: 20px;
+    display:inline-block;
+    position: absolute;
+    margin-top: 5px;
+}
+h2::before{
+    background:url("../img/14.png");
+    background-size:contain;
+    margin-left: -95px;
+}
+h2::after{
+    background:url("../img/13.png");
+    background-size:contain;
+    margin-left: 63px;
+    top:0;
+}
+h2 small{
+    display:block;
+    font-size:12px;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+
+/*----------底部-----------*/
+
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.footer p{
+    color:#00e6b6;
+    font-weight:bold;
+    line-height:32px;
+}
+.footer .bu{
+    height: 70px;
+}
+.footer .bu img{
+    height: 70px;
+    position:absolute;
+}
+.footer .bu img:nth-of-type(1){
+    left: 0;
+}
+.footer .bu img:nth-of-type(2){
+    left: -45px;
+}
+
+
+
+
+/*     * 第一屏样式  开始 *      */
+
+
+
+/*-------------header-------------*/
+.s1 .header img:nth-of-type(1){
+    width: 34px;
+    position:absolute;
+    top:135px;
+    left: 50px;
+}
+.s1 .header img:nth-of-type(2){
+    width: 65px;
+    position:absolute;
+    top:90px;
+    right: 40px;
+}
+.s1 .header img:nth-of-type(3){
+    width: 55px;
+    position:absolute;
+    left: 35px;
+    bottom: 180px;
+}
+.s1 .header img:nth-of-type(4){
+    width: 50px;
+    position:absolute;
+    right: 50px;
+    bottom: 200px;
+}
+.s1 .header img:nth-of-type(5){
+    width: 70%;
+    position:absolute;
+    top:25%;
+    left:50%;
+    margin-left: -35%;
+}
+
+/*-------------main-------------*/
+.s1 .main{
+    position: absolute;
+    top: 30%;
+}
+.s1 .main img:nth-of-type(1){
+    width:40%;
+}
+.s1 .main img:nth-of-type(2){
+    width: 80%;
+    margin-bottom: 20px;
+}
+.s1 .main .img9{
+    font-size:20px;
+    width: 223px;
+    color:#000;
+    background-image: url(../img/9.png);
+    background-size:contain;
+    margin:auto;
+}
+
+/*-------------footer-------------*/
+.s1 .footer p:nth-of-type(2){
+    margin-bottom: 60px;
+}
+.s1 .music{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+.s1 .music img{
+    width: 12px;
+}
+
+
+
+
+/*     * 第二屏样式  开始 *      */
+
+.s2 div:nth-of-type(1){
+    width: 80%;
+    height: 380px;
+    position:absolute;
+    top: 23%;
+    left: 50%;
+    margin-left: -40%;
+}
+.s2 div:nth-of-type(1) img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 0;
+}
+.s2 div:nth-of-type(1) p{
+    margin-bottom: 10px;
+    padding:0 10%;
+    font-size:14px;
+    text-align:left;
+    line-height:22px;
+}
+.s2 div:nth-of-type(1) p:nth-of-type(1){
+    padding-top: 25px;
+}
+.s2 div:nth-of-type(1) span{
+    /*线性渐变*/
+    background: -moz-linear-gradient(left, #00ecfc, #00fd9d); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #00ecfc, #00fd9d); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #00ecfc, #00fd9d); /*Opera11*/
+
+    width: 123px;
+    height: 28px;
+    display:block;
+    border-radius:10px;
+    color: #000;
+    font-weight:bold;
+    line-height:28px;
+    font-size:16px;
+    position:absolute;
+    left:50%;
+    bottom:-3%;
+    margin-left: -61.5px;
+}
+
+
+
+/*     * 第三屏样式  开始 *      */
+
+.s3 div:nth-of-type(1){
+    width: 80%;
+    height: 380px;
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -40%;
+}
+.s3 div:nth-of-type(1) p{
+    /*径向渐变*/
+    background: -webkit-radial-gradient(circle,#0c0022,#006275); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(circle,#0c0022,#006275); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(circle,#0c0022,#006275); /* Firefox 3.6 - 15 */
+    background: radial-gradient(circle,#0c0022,#006275); /* 标准的语法（必须放在最后） */
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius:50%;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(1){
+    width: 134px;
+    height: 134px;
+    line-height:134px;
+    top: 50%;
+    left: 50%;
+    margin-left: -67px;
+    margin-top: -67px;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(2){
+    top:7%;
+    left:14%;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(3){
+    top:7%;
+    right:14%;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(4){
+    top:41%;
+    left:-7%
+}
+.s3 div:nth-of-type(1) p:nth-of-type(5){
+    top:41%;
+    right:-7%;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(6){
+    bottom:7%;
+    left:14%;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(7){
+    bottom:7%;
+    right:14%;
+}
+.s3 .title{
+    width: 75%;
+    height: 66px;
+    font-size:14px;
+    line-height:33px;
+    border-left:3px solid #00e6b6;
+    padding-left: 20px;
+    text-align:left;
+    position:absolute;
+    left:15%;
+    bottom:12%;
 }
