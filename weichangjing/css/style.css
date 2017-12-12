@@ -365,7 +365,7 @@ h2 small{
 
 
 
-.s4 .title{
+.s4 .title,.s6 .tittle{
     position:absolute;
     width: 80%;
     height: 57%;
@@ -471,6 +471,23 @@ h2 small{
     font-size:16px;
     margin-left: 15px;
     margin-top: 20px;
+}
+.s6 .img32{
+    width: 256px;
+    height: 26px;
+    background:url(../img/32.png);
+    background-size:contain;
+}
+.s6 .img31{
+    width: 280px;
+    height: 80px;
+    background:url(../img/31.png);
+    background-size:contain;
+    font-size: 14px;
+}
+.s6 .img31 span{
+    text-align: left;
+    display: block;
 }
 .s7 input{
     width:90%;
