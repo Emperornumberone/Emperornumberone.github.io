@@ -36,6 +36,19 @@ body {
     bottom:5%;
     margin-left: -13.5px;
     transform:rotateZ(-90deg);
+    width: 17px;
+    background-size:contain;
+    animation: buttonnext 2s infinite;
+}
+@keyframes buttonnext {
+    from{
+        bottom:3%;
+        opacity:1;
+    }
+    to{
+        bottom:6%;
+        opacity:0;
+    }
 }
 
 .s1,.s2,.s3,.s4,.s5,.s6,.s7{
@@ -101,9 +114,27 @@ h2 small{
 }
 .footer .bu img:nth-of-type(1){
     left: 0;
+    animation: bu1 4s infinite;
 }
 .footer .bu img:nth-of-type(2){
     left: -45px;
+    animation: bu2 4s infinite alternate;
+}
+@keyframes bu1 {
+    from{
+        left:0;
+    }
+    to{
+        left:-20px;
+    }
+}
+@keyframes bu2 {
+    from{
+        left:-45px;
+    }
+    to{
+        left:-35px;
+    }
 }
 
 
@@ -119,24 +150,32 @@ h2 small{
     position:absolute;
     top:135px;
     left: 50px;
+    animation:swing 4s infinite;
+    transform-origin: center;
 }
 .s1 .header img:nth-of-type(2){
     width: 65px;
     position:absolute;
     top:90px;
     right: 40px;
+    animation:swing 4s infinite;
+    transform-origin: center;
 }
 .s1 .header img:nth-of-type(3){
     width: 55px;
     position:absolute;
     left: 35px;
     bottom: 180px;
+    animation:swing 4s infinite;
+    transform-origin: center;
 }
 .s1 .header img:nth-of-type(4){
     width: 50px;
     position:absolute;
     right: 50px;
     bottom: 200px;
+    animation:swing 4s infinite;
+    transform-origin: center;
 }
 .s1 .header img:nth-of-type(5){
     width: 70%;
@@ -144,6 +183,8 @@ h2 small{
     top:25%;
     left:50%;
     margin-left: -35%;
+    animation:swing 4s infinite;
+    transform-origin: center;
 }
 
 /*-------------main-------------*/
@@ -173,7 +214,7 @@ h2 small{
 }
 /*     * 第二屏样式  开始 *      */
 
-.s2 div:nth-of-type(1){
+.s2 div:nth-of-type(1),.s7 div:nth-of-type(1),.s5 ul{
     width: 80%;
     height: 380px;
     position:absolute;
@@ -181,7 +222,7 @@ h2 small{
     left: 50%;
     margin-left: -40%;
 }
-.s2 div:nth-of-type(1) img{
+.s2 div:nth-of-type(1) img,.s7 div:nth-of-type(1) img{
     width: 100%;
     height: 100%;
     position:absolute;
@@ -332,9 +373,67 @@ h2 small{
     left: 50%;
     margin-left: -40%;
 }
-.s4 div:nth-of-type(1) img{
+.s4 div:nth-of-type(1) img:nth-of-type(1){
     width: 100%;
     height: 100%;
     position:absolute;
     left: 0;
+}
+.yuan{
+     width: 15px;
+ }
+.s5 .img25{
+    background:url(../img/25.png);
+    width: 138px;
+    height: 177px;
+    background-size:contain;
+    float: left;
+    margin-left:10px;
+    margin-top:20px;
+}
+.s5 ul li img{
+    width: 106px;
+    height: 101px;
+}
+.s5 ul li P{
+    font-size: 14px;
+}
+.s5 ul li span{
+    /*线性渐变*/
+    background: -moz-linear-gradient(left, #00ecfc, #00fd9d); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #00ecfc, #00fd9d); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #00ecfc, #00fd9d); /*Opera11*/
+    width: 100px;
+    height: 21px;
+    display:block;
+    border-radius:10px;
+    color: #000;
+    font-weight:bold;
+    line-height:28px;
+    font-size:16px;
+    position:absolute;
+    left:50%;
+    bottom:-3%;
+    margin-left: -61.5px;
+}
+.s7 input{
+    width:90%;
+    height: 55px;
+    margin-top: 10px;
+}
+.s7 input:nth-of-type(1){
+    margin-top:41px;
+}
+.s7 a{
+    width: 90%;
+    background: #00f2ca;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    padding:22px 0;
+    text-decoration: none;
+}
+.s7 p:nth-of-type(1){
+    margin-top: 24px;
 }
