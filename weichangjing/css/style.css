@@ -365,23 +365,80 @@ h2 small{
 
 
 
-.s4 div:nth-of-type(1){
-    width: 80%;
-    height: 380px;
+.s4 .title{
     position:absolute;
-    top: 23%;
-    left: 50%;
+    width: 80%;
+    height: 57%;
+    left:50%;
+    top: 22%;
     margin-left: -40%;
 }
-.s4 div:nth-of-type(1) img:nth-of-type(1){
+.s4 .title .img{
     width: 100%;
     height: 100%;
     position:absolute;
     left: 0;
 }
-.yuan{
-     width: 15px;
- }
+.s4 .title h3{
+    width: 45%;
+    height: 20px;
+    line-height: 20px;
+    position:absolute;
+}
+.s4 .title h3:nth-of-type(1){
+    top:5%;
+    left:7%;
+}
+.s4 .title h3:nth-of-type(2){
+    top:5%;
+    left:50%;
+}
+.s4 .title h3 img{
+    height: 25px;
+    position:absolute;
+    left:12%;
+}
+.s4 .title h3 span{
+    font-size: 14px;
+}
+.s4 .title div{
+    position:absolute;
+    height: 20%;
+    text-align:left;
+}
+.s4 .title div:nth-of-type(1){
+    top:15%;
+    left:0%;
+}
+.s4 .title div:nth-of-type(2){
+    top:35%;
+    left:0%;
+}
+.s4 .title div:nth-of-type(3){
+    top:60%;
+    left:0%;
+}
+.s4 .title div p{
+    width: 100%;
+    height: 20%;
+}
+.s4 .title div p img{
+    height:80%;
+}
+.s4 .title div p:nth-of-type(1){
+    margin-bottom: 10px;
+}
+.s4 .title div p:nth-of-type(1) span:nth-of-type(2){
+    color:#fff;
+}
+.s4 .title div p:nth-of-type(2) span,
+.s4 .title div p:nth-of-type(3) span{
+    font-size:12px;
+}
+.s4 .xh{
+    position: absolute;
+    bottom: 5%;
+}
 .s5 .img25{
     background:url(../img/25.png);
     width: 138px;
@@ -410,12 +467,10 @@ h2 small{
     border-radius:10px;
     color: #000;
     font-weight:bold;
-    line-height:28px;
+    line-height:21px;
     font-size:16px;
-    position:absolute;
-    left:50%;
-    bottom:-3%;
-    margin-left: -61.5px;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 .s7 input{
     width:90%;
