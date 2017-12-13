@@ -439,55 +439,118 @@ h2 small{
     position: absolute;
     bottom: 5%;
 }
-.s5 .img25{
-    background:url(../img/25.png);
-    width: 138px;
-    height: 177px;
-    background-size:contain;
-    float: left;
-    margin-left:10px;
-    margin-top:20px;
+.s5 .title{
+    position:absolute;
+    width: 80%;
+    height: 57%;
+    top:25%;
+    left:50%;
+    margin-left: -40%;
 }
-.s5 ul li img{
-    width: 106px;
-    height: 101px;
+.s5 .title div{
+    background-image: url("../img/12.png");
+    background-size: contain;
+    width: 45%;
+    height: 45%;
+    position:absolute;
 }
-.s5 ul li P{
-    font-size: 14px;
+.s5 .title div:nth-of-type(1){
+    top:0%;
+    left:0%;
 }
-.s5 ul li span{
+.s5 .title div:nth-of-type(2){
+    top:0%;
+    right:0%;
+}
+.s5 .title div:nth-of-type(3){
+    bottom:0%;
+    left:0%;
+}
+.s5 .title div:nth-of-type(4){
+    bottom:0%;
+    right:0%;
+}
+.s5 .title div img{
+    margin-top: 7%;
+}
+.s5 .title div p{
+    margin-bottom: 5px;
+}
+.s5 .title div p:nth-of-type(2){
     /*线性渐变*/
     background: -moz-linear-gradient(left, #00ecfc, #00fd9d); /*Mozilla*/
     background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d)); /*Old gradient for webkit*/
     background: -webkit-linear-gradient(left, #00ecfc, #00fd9d); /*new gradient for Webkit*/
     background: -o-linear-gradient(left, #00ecfc, #00fd9d); /*Opera11*/
-    width: 100px;
-    height: 21px;
-    display:block;
+
+    width: 80%;
+    color:#000;
+    margin-left: 10%;
     border-radius:10px;
-    color: #000;
-    font-weight:bold;
-    line-height:21px;
-    font-size:16px;
-    margin-left: 15px;
-    margin-top: 20px;
 }
-.s6 .img32{
-    width: 256px;
-    height: 26px;
-    background:url(../img/32.png);
+
+
+
+
+
+
+/*     * 第六屏样式  开始 *      */
+
+
+.s6 .title{
+    position:absolute;
+    width: 80%;
+    height: 57%;
+    top:23%;
+    left:50%;
+    margin-left: -40%;
+    border-left:2px dotted #00fd9d;
+}
+.s6 .title .main{
+    width: 100%;
+    height: 33.33%;
+    position:absolute;
+}
+.s6 .title .main:nth-of-type(1){
+    top:0%;
+    left:0%;
+}
+.s6 .title .main:nth-of-type(2){
+    top:35%;
+    left:0%;
+}
+.s6 .title .main:nth-of-type(3){
+    top:70%;
+    left:0%;
+}
+.s6 .title .main .time{
+    background:url("../img/timebj.png");
+    background-size: cover;
+    width: 90%;
+    height: 20%;
+    margin-left: 10%;
+    color:#000;
+    line-height:28px;
+    text-align:left;
+    padding-left: 10px;
+}
+.s6 .title .main .text{
+    width: 90%;
+    height: 60%;
+    background:url("../img/pbj.png");
     background-size:contain;
+    text-align:left;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-size:14px;
+    line-height:22px;
+    padding-top: 5px;
+    padding-left: 10px;
 }
-.s6 .img31{
-    width: 280px;
-    height: 80px;
-    background:url(../img/31.png);
-    background-size:contain;
-    font-size: 14px;
-}
-.s6 .img31 span{
-    text-align: left;
-    display: block;
+.s6 .title .main img{
+    position:absolute;
+    top:-16%;
+    left:-9%;
 }
 .s7 input{
     width:90%;
