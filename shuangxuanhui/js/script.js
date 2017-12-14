@@ -30,7 +30,7 @@ var mp3btn=document.querySelector("#mp3btn");
 // mp3btn.style.animationPlayState="running";
 mp3btn.onclick=function(){
     if(mp3.paused){
-        mp3btn.style.animationPlayState="running";
+        mp3btn.style.animationPlayState="paused";
         mp3.play();
     }else{
         mp3btn.style.animationPlayState="paused";

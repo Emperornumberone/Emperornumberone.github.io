@@ -59,7 +59,7 @@ body {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    
+
 }
 #mp3btn{
     position:absolute;
@@ -100,13 +100,13 @@ body {
     position: absolute;
 }
 .s1 img:nth-of-type(1){
-    top: 24%;
+    top: 30%;
     right:75%;
     margin-right: -65%;
     transform: rotate(-90deg);
 }
 .s1 img:nth-of-type(2){
-    top: 25%;
+    top: 31%;
     right: 74%;
     margin-right: -73%;
     transform: rotate(-90deg);
@@ -114,16 +114,25 @@ body {
 }
 .s1 img:nth-of-type(3){
     width: 50%;
-    top: 16%;
-    left: 27%;
+    top: 18%;
+    left: 34%;
 }
 .s1 img:nth-of-type(4){
     width: 50%;
-    top: 46%;
-    left: 27%;
+    top: 61%;
+    left: 32%;
 }
 .s1 img:nth-of-type(5){
     width:20%;
-    top: 39%;
-    left: 31%;
+    top: 48%;
+    left: 37%;
 }
+.s1 .footer{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    font-weight:bold;
+    color: #e70012;
+    margin:auto;
+}
+
