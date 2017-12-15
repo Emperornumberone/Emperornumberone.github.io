@@ -161,13 +161,31 @@ h2::after{
 }
 .s2 .article p{
     text-align:left;
+    margin-bottom: 20px;
+}
+.s3 .article{
+    width: 100%;
+    position: absolute;
+    top: 10%;
+}
+.s3 .article img:nth-of-type(1){
+    width:50%;
+    margin-bottom:20px;
+}
+.s3 .article img:nth-of-type(2){
+    width:50%;
+}
+.s4 .article{
+    position: absolute;
+    top: 15%;
+    width: 100%;
 }
 .s4 .article .text1,.s4 .article .text2{
     width:80%;
     margin:auto;
 }
 .s4 .article .text1 img,.s4 .article .text2 img{
-    width:47%;
+    width:55%;
 }
 .s4 .article .text1 p,.s4 .article .text2 p{
     display: block;
@@ -181,7 +199,7 @@ h2::after{
     width:35%;
     float: left;
     border-right:1px dotted #890a14;
-    margin-left: 5%;
+    margin-left:10%;
 }
 .s6 .article .text2{
     width:40%;
@@ -190,10 +208,18 @@ h2::after{
 .s6 .article .text1 span{
     font-size: 16px;
     display:block;
+    margin-bottom: 30px;
 }
 .s6 .article .text2 span{
     font-size: 16px;
     display: block;
+    margin-bottom:26px;
+}
+.s6 .article .text2 span:nth-of-type(1){
+    margin-top: -2px;
+}
+.s6 .article .text2 span:nth-last-of-type(1){
+    margin-top:5px;
 }
 .s7 .article{
     position: absolute;
@@ -228,5 +254,6 @@ h2::after{
 .s7 .footer img{
     width: 20%;
     margin-left: -50%;
+    display: inline-block;
 }
 
